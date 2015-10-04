@@ -11,4 +11,5 @@ twitter_username: thedesignable
 github_username:  thedesignable
 
 # Build settings
+highlighter: pygments
 markdown: kramdown
