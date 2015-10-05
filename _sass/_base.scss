@@ -19,7 +19,6 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     display: flex;
     min-height: 100vh;
@@ -29,6 +28,10 @@ body {
   main {
     flex: 1 0 auto;
   } 
+
+body{
+    background: url('/assets/bg.jpg') center center no-repeat;
+}  
 
 
 /**

@@ -2,23 +2,24 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
+.navigator{
+    opacity: 0.70;
+}
 
 nav .brand-logo {
     padding-left: 20px !important;
-    color: #009688 !important;
+    color: $milk !important;
     text-decoration: none;
     }
 
 a.page-link{
     text-decoration: none;
-    color: $teal;
+    color: $milk;
     }
 
 /**
@@ -138,7 +139,7 @@ a.page-link{
 }
 
 .active {
-    border-bottom: $teal solid 3px;
+    border-bottom: $milk solid 3px;
 }
 
 /** fa styles **/
@@ -155,4 +156,13 @@ a.page-link{
 
 .text {
     color: $milk;
+}
+.feat{
+    background-color: $milk;
+    padding: 3em;
+    .title{
+        font-family: $base-font-family;
+        text-decoration: $teal underline;
+    }
+
 }
