@@ -18,78 +18,38 @@ nav .brand-logo {
 
 a.page-link{
     text-decoration: none;
-    color: $milk;
+    color: $teal;
     }
 
 /**
  * Site footer
  */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
-}
-
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
-}
 
 .contact-list,
 .social-media-list {
     list-style: none;
     margin-left: 0;
+    color: $milk;
 }
 
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+.social-media-list{
+    li, a{
+    text-decoration: none;
+    color: $milk;
     }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+    li:hover, a:hover{
+        text-decoration: none;
+        color: $milk;
     }
 }
 
 
+/** footer logo styles **/
+.footer{
+    font-size: 1.5em;
+    color: $milk;
+    margin-top: none;
+}
 
 /**
  * Page content
@@ -165,5 +125,30 @@ a.page-link{
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+.waves-effect, .waves-light, .btn {
+    text-decoration: none;
+    color: $milk;
+}
+.btn:hover{
+    color: $milk;
+    text-decoration: none !important;
+}
+
+.active {
+    border-bottom: $teal solid 3px;
+}
+
+/** fa styles **/
+.mail {
+    a{
+    padding-left: 0.5em;
+    color: $milk;
+    }
+    a:hover{
+        text-decoration: none !important;
+        color: $milk;
     }
 }
