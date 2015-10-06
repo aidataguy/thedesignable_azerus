@@ -139,7 +139,7 @@ a.page-link{
 }
 
 .active {
-    border-bottom: $milk solid 3px;
+    border-bottom: $milk solid 1px;
 }
 
 /** fa styles **/
@@ -165,4 +165,11 @@ a.page-link{
         text-decoration: $teal underline;
     }
 
+}
+
+ul.right{
+    li > a{
+        text-decoration: none;
+        color: $milk;
+    }
 }
