@@ -243,6 +243,7 @@ ul.right{
 .context-content{
     padding: 2em; 
         a{
+        text-decoration: underline $teal 2px solid;
         color: $teal !important;
     }  
 }
