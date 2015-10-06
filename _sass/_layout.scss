@@ -157,14 +157,14 @@ a.page-link{
 .text {
     color: $milk;
 }
-.feat{
+.box{
     background-color: $milk;
     padding: 3em;
     .title{
         font-family: $base-font-family;
+        font-size: 1.5em;
         text-decoration: $teal underline;
     }
-
 }
 
 ul.right{
@@ -172,4 +172,73 @@ ul.right{
         text-decoration: none;
         color: $milk;
     }
+}
+
+.feature1{
+    font-family: $base-font-family;
+       ul > li{
+            line-height: 2em;
+            font-weight: normal;
+
+        }
+        .fa{
+            color: $teal;
+            letter-spacing: 0.50em;
+        }
+}
+
+.feature2{
+    font-family: $base-font-family;
+       ul > li{
+            line-height: 2em;
+            font-weight: normal;
+
+        }
+        .fa{
+            color: $teal;
+            letter-spacing: 0.50em;
+        }
+
+}
+.feature3{
+    font-family: $base-font-family;
+       ul > li{
+            line-height: 2em;
+            font-weight: normal;
+
+        }
+        .fa{
+            color: $teal;
+            letter-spacing: 0.50em;
+        }
+
+}
+.sidebar{
+    position: fixed;
+    right: 0;
+    font-family: $base-font-family;
+    background-color: $teal;
+    border-radius: 1em;
+    color: $milk;
+    text-align: center;
+    overflow: hidden;
+    .title{
+        padding-top: 1em;
+    }
+    
+    li.links{
+        text-decoration: none !important;
+    }
+}
+.context{
+    font-family: $base-font-family;
+    background-color: $milk;
+    color: $teal;
+    border-radius: 1em;
+    .title{
+        text-decoration: solid $teal underline;
+    }
+}
+.context-content{
+    padding: 2em;   
 }
