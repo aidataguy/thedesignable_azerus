@@ -238,10 +238,11 @@ ul.right{
     .title{
         text-decoration: solid $teal underline;
     }
-    a{
-        color: $teal !important;
-    }
+
 }
 .context-content{
-    padding: 2em;   
+    padding: 2em; 
+        a{
+        color: $teal !important;
+    }  
 }
