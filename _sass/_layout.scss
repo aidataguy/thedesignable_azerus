@@ -247,3 +247,41 @@ ul.right{
         color: $teal !important;
     }  
 }
+
+#home{
+    margin-bottom: 25em;
+    .title{
+        margin-top: 5em;
+        color: $milk;
+        font-family: $base-font-family;
+        font-weight: bold;
+        text-transform: uppercase;
+        }
+        .tags{
+            margin-top: 5em;
+        }
+
+}
+
+#modal1{
+    h4, p{
+        color: $teal;
+        font-family: $base-font-family;
+        font-size: 3em;
+    }
+    a{
+        color: $teal;
+    }
+    a:hover{
+        border: $teal 0.50px solid;
+    }
+}
+
+.touche{
+    a{
+    color: $milk !important;
+    }
+    .btn-flat{
+        float: none;
+    }
+}

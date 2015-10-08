@@ -1,3 +1,10 @@
+$(window).load(function(){
+    $("#modal1").openModal();
+    $(document).ready(function(){
+    	$('.lean-overlay').remove();
+    });
+   });
+
 $(document).ready(function() {
   	wow = new WOW(
       {

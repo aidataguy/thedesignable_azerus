@@ -43,6 +43,11 @@ $on-laptop:        800px;
     }
 }
 
+.hiddendiv, .common{
+	.lean-overlay{
+	display: none !important;
+	}
+}
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
