@@ -95,7 +95,7 @@ a.page-link{
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
-
+    text-transform: uppercase;
     @include media-query($on-laptop) {
         font-size: 36px;
     }
@@ -163,7 +163,7 @@ a.page-link{
     .title{
         font-family: $base-font-family;
         font-size: 1.5em;
-        text-decoration: $teal underline;
+        text-transform: uppercase;
     }
 }
 
@@ -224,6 +224,7 @@ ul.right{
     overflow: hidden;
     .title{
         padding-top: 1em;
+        text-transform: uppercase;
     }
     
     li.links{
@@ -235,15 +236,11 @@ ul.right{
     background-color: $milk;
     color: $teal;
     border-radius: 1em;
-    .title{
-        text-decoration: solid $teal underline;
-    }
 
 }
 .context-content{
     padding: 2em; 
         a{
-        text-decoration: underline $teal 2px solid !important;
         color: $teal !important;
     }  
 }
@@ -294,3 +291,17 @@ ul.side-nav {
 }
 
     
+.sidebar > ul > li > a{
+    color: $milk;
+}
+
+.right{
+    li:hover{
+        background-color: $milk;
+        border-bottom: $teal 5px solid;
+    }
+    a:hover{
+        color: $teal;    
+    }
+
+}
