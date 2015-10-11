@@ -294,3 +294,16 @@ ul.side-nav {
 }
 
     
+.sidebar > ul > li > a{
+    color: $milk;
+}
+
+.right{
+    li:hover{
+        background-color: $milk;
+    }
+    a:hover{
+        color: $teal;    
+    }
+
+}
