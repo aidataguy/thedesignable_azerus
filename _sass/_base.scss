@@ -23,15 +23,33 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    
 }
 
-  main {
-    flex: 1 0 auto;
-  } 
+
+@include media-query ($on-small){
+    body{
+    overflow: visible !important;
+    }
+}
+
+@include media-query ($on-palm){
+    body{
+    overflow: visible !important;
+    }
+}
+
+main {
+   flex: 1 0 auto;
+} 
 
 body{
     background: url('/assets/bg.jpg') center center no-repeat;
 }  
+
+//html{
+//    overflow: hidden;
+//}
 
 
 /**
@@ -162,16 +180,96 @@ pre {
 /**
  * Icons
  */
-.icon {
+@include media-query($on-small){
+    .brand-logo{
+        font-size: 1em !important;
+        padding-left: 1em !important;
+    }
+}
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
 
-        path {
-            fill: $grey-color;
+@include media-query($on-small){
+    .fa-navicon{
+        padding-left: 1em;
+    }
+}
+
+@include media-query($on-small){
+    .active {
+    background-color: $teal;
+    }
+}
+
+@include media-query($on-palm){
+    .active {
+    background-color: $teal;
+    }
+}
+
+@include media-query($on-palm){
+    .fa-navicon{
+        padding-left: 1em;
+    }
+}
+
+@include media-query($on-palm){
+    .brand-logo{
+        font-size: 1em !important;
+        padding-left: 1em !important;
+    }
+}
+
+@include media-query($on-palm){
+    .sidebar{
+        position: inherit !important;
+        font-family: $base-font-family;
+        background-color: $teal;
+        border-radius: 1em;
+        color: $milk;
+        text-align: center;
+        .title{
+        padding-top: 1em;
+    }
+    
+    li.links{
+        text-decoration: none !important;
+    }
+    }
+    .context{
+        font-family: $base-font-family;
+        background-color: $milk;
+        color: $teal;
+        border-radius: 1em;
+        .title{
+        text-decoration: solid $teal underline;
         }
+    }
+}
+
+@include media-query($on-small){
+    .sidebar{
+        position: inherit !important;
+        font-family: $base-font-family;
+        background-color: $teal;
+        border-radius: 1em;
+        color: $milk;
+        text-align: center;
+        margin-top: 0.50em;
+        .title{
+        padding-top: 1em;
+    }
+    
+    li.links{
+        text-decoration: none !important;
+        }
+    }
+    .context{
+        font-family: $base-font-family;
+        background-color: $milk;
+        color: $teal;
+        border-radius: 1em;
+        .title{
+            text-decoration: solid $teal underline;
+       }
     }
 }
