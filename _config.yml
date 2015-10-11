@@ -11,6 +11,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://thedesignable.github.io" # the base hostname & protocol for your site
 twitter_username: thedesignable
 github_username:  thedesignable
+copyright: All Rights Reserved | The Designable LLC - Russia
 
 # Build settings
 highlighter: pygments
